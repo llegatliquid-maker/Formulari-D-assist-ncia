@@ -183,6 +183,7 @@ body::after {
 }
 
 .event-location {
+  display: block;
   font-size: 0.58rem;
   font-weight: 400;
   letter-spacing: 0.25em;
@@ -190,6 +191,15 @@ body::after {
   text-transform: uppercase;
   line-height: 2;
   text-align: center;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.event-location:hover {
+  color: var(--gold2);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-color: rgba(200,168,112,0.4);
 }
 
 
@@ -574,7 +584,7 @@ input[type="checkbox"].real { position: absolute; opacity: 0; pointer-events: no
   <!-- ═══════ HEADER ═══════ -->
   <header class="header">
     <p class="overline">Invitació Privada · DOQ Priorat</p>
-    <h1 class="brand">Mas del Camperol</h1>
+    <h1 class="brand">Llegat del Camperol</h1>
     <p class="tagline">El rescat d'un llegat líquid</p>
 
     <div class="rule">
@@ -599,9 +609,9 @@ input[type="checkbox"].real { position: absolute; opacity: 0; pointer-events: no
         </div>
       </div>
 
-      <p class="event-location">
-        Camí Rieres s.n.&emsp;·&emsp;43736 El Molar&emsp;·&emsp;Priorat
-      </p>
+      <a class="event-location" href="https://www.google.com/maps/place/Mas+del+Camperol/@41.1702889,0.7441475,17z/data=!4m6!3m5!1s0x12a12f9c2340b223:0xf32f64a487668aba!8m2!3d41.1702889!4d0.7441475!16s%2Fg%2F11x7vy0z2!18m1!1e1?entry=ttu&g_ep=EgoyMDI2MDQwOC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener">
+        Mas del Camperol&emsp;·&emsp;Camí Rieres s.n.&emsp;·&emsp;43736 El Molar&emsp;·&emsp;Priorat
+      </a>
     </div>
   </header>
 
@@ -613,8 +623,8 @@ input[type="checkbox"].real { position: absolute; opacity: 0; pointer-events: no
 
       <!-- Web3Forms config -->
       <input type="hidden" name="access_key"  value="2b4c0e68-0735-481b-ac61-c4771c950641">
-      <input type="hidden" name="subject"      value="✦ Nova Confirmació — Mas del Camperol · 1 Maig 2026">
-      <input type="hidden" name="from_name"    value="Mas del Camperol · RSVP">
+      <input type="hidden" name="subject"      value="✦ Nova Confirmació — Llegat del Camperol · 1 Maig 2026">
+      <input type="hidden" name="from_name"    value="Llegat del Camperol · RSVP">
       <input type="hidden" name="replyto"      id="hiddenReply" value="">
       <input type="checkbox" name="botcheck"   style="display:none" tabindex="-1">
 
@@ -773,7 +783,7 @@ input[type="checkbox"].real { position: absolute; opacity: 0; pointer-events: no
   <!-- ═══════ FOOTER ═══════ -->
   <footer class="footer">
     <span>Edició Limitada &thinsp;·&thinsp; Accés per Invitació Nominativa</span><br>
-    Família Garriga &thinsp;·&thinsp; DOQ Priorat &thinsp;·&thinsp; Mas del Camperol<br>
+    Família Garriga &thinsp;·&thinsp; DOQ Priorat &thinsp;·&thinsp; Llegat del Camperol<br>
     Les dades facilitades seran tractades amb estricta confidencialitat
   </footer>
 
